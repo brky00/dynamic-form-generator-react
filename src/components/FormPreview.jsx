@@ -1,4 +1,7 @@
 export default function FormPreview({ formFields }) {
+  if (formFields.length === 0) {
+    return <h4 className="text-center">No form fields added yet</h4>;
+  }
   return (
     <div>
       <h4>Form Preview</h4>
